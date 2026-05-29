@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bijoystudio85-sudo.github.io/quicktoolkit/sitemap.xml
