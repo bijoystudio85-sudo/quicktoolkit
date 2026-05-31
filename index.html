@@ -10,6 +10,7 @@
 
   gtag('config', 'G-VEY7YV101P');
 </script>
+  <link rel="manifest" href="/quicktoolkit/manifest.json">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="google-site-verification" content="yH_VnloNNHyhTokNW34RdDXPZB45gztu0_VSaHSlu70"/>
@@ -448,5 +449,12 @@ function calcP3(){var a=parseFloat(document.getElementById('p3a').value),b=parse
 function calcP4(){var a=parseFloat(document.getElementById('p4a').value),b=parseFloat(document.getElementById('p4b').value);if(isNaN(a)||isNaN(b))return;var da=b/100*a;document.getElementById('p4r').textContent='Original: $'+a+' | Discount: $'+da.toFixed(2)+' | Final: $'+(a-da).toFixed(2);}
 window.onload=function(){initAge();generatePassword();updateColor();};
 </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/quicktoolkit/sw.js')
+      .then(reg => console.log('SW registered', reg))
+      .catch(err => console.error('SW failed', err));
+  }
+  </script>
 </body>
 </html>
