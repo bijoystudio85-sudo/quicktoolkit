@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="google-site-verification" content="yH_VnloNNHyhTokNW34RdDXPZB45gztu0_VSaHSlu70"/>
+<title>Free Word Counter Online — Count Words, Characters & Sentences | QuickToolKit</title>
+<meta name="description" content="Free online word counter tool. Count words, characters, sentences, paragraphs and reading time instantly. No signup required. Fast and accurate."/>
+<meta name="keywords" content="word counter, free word counter online, character counter, sentence counter, word count tool, online word counter"/>
+<meta property="og:title" content="Free Word Counter Online | QuickToolKit"/>
+<meta property="og:description" content="Count words, characters, sentences and reading time instantly. Free, no signup required."/>
+<meta property="og:url" content="https://bijoystudio85-sudo.github.io/quicktoolkit/word-counter.html"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Free Word Counter Online | QuickToolKit"/>
+<meta name="twitter:description" content="Count words, characters, sentences and reading time instantly. Free, no signup required."/>
+<link rel="canonical" href="https://bijoystudio85-sudo.github.io/quicktoolkit/word-counter.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0a0f1e;--surface:#111827;--surface2:#1a2235;--border:#1e2d45;--accent:#00d4ff;--accent2:#7c3aed;--accent3:#10b981;--text:#e2e8f0;--text2:#94a3b8;--text3:#4a6080;--danger:#f87171;--radius:14px;--radius-sm:8px;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50;}
+.logo{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none;}
+.nav-links{display:flex;gap:16px;align-items:center;}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:13px;transition:color 0.2s;}
+.nav-links a:hover{color:var(--accent);}
+.topbar-badge{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#000;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;}
+.container{max-width:860px;margin:0 auto;padding:32px 20px;}
+.breadcrumb{font-size:13px;color:var(--text3);margin-bottom:20px;}
+.breadcrumb a{color:var(--text3);text-decoration:none;}
+.breadcrumb a:hover{color:var(--accent);}
+.breadcrumb span{margin:0 8px;}
+.page-header{margin-bottom:28px;}
+.page-header h1{font-family:'Syne',sans-serif;font-size:32px;font-weight:800;margin-bottom:8px;line-height:1.2;}
+.page-header h1 span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.page-header p{color:var(--text2);font-size:15px;line-height:1.6;}
+.ad-slot{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center;margin-bottom:24px;}
+.tool-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:24px;}
+textarea{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;outline:none;resize:vertical;min-height:200px;line-height:1.6;}
+textarea:focus{border-color:var(--accent);}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px;}
+.stat-box{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;text-align:center;}
+.stat-num{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--accent);}
+.stat-label{font-size:12px;color:var(--text3);margin-top:4px;}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:var(--radius-sm);font-size:14px;font-weight:600;cursor:pointer;transition:all 0.2s;border:none;font-family:'DM Sans',sans-serif;}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#0099cc);color:#000;}
+.btn-danger{background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.3);color:var(--danger);}
+.btn-success{background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);color:var(--accent3);}
+.info-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:24px;}
+.info-section h2{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;margin-bottom:12px;color:var(--text);}
+.info-section p{color:var(--text2);font-size:14px;line-height:1.7;margin-bottom:10px;}
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:24px;}
+.tool-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all 0.2s;text-decoration:none;display:block;}
+.tool-card:hover{border-color:rgba(0,212,255,0.3);transform:translateY(-2px);}
+.tool-card-icon{font-size:22px;margin-bottom:8px;}
+.tool-card-name{font-size:13px;font-weight:700;color:var(--text);}
+.toast{position:fixed;bottom:28px;right:28px;background:var(--accent3);color:#000;padding:12px 20px;border-radius:var(--radius-sm);font-size:14px;font-weight:600;z-index:999;transform:translateY(80px);opacity:0;transition:all 0.3s;pointer-events:none;}
+.toast.show{transform:translateY(0);opacity:1;}
+.footer{background:var(--surface);border-top:1px solid var(--border);padding:20px;text-align:center;font-size:13px;color:var(--text3);margin-top:32px;}
+.footer a{color:var(--text3);text-decoration:none;}
+.footer a:hover{color:var(--accent);}
+@media(max-width:600px){
+.stats-grid{grid-template-columns:repeat(2,1fr);}
+.page-header h1{font-size:24px;}
+.container{padding:20px 16px;}
+.nav-links{display:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <a class="logo" href="index.html">&#9889; QuickToolKit</a>
+  <div class="nav-links">
+    <a href="index.html">All Tools</a>
+    <a href="password-generator.html">Password Gen</a>
+    <a href="qr-code-generator.html">QR Code</a>
+    <a href="image-compressor.html">Image Compressor</a>
+  </div>
+  <div class="topbar-badge">100% FREE</div>
+</div>
+
+<div class="container">
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    Word Counter
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>&#128221; Free <span>Word Counter</span> Online</h1>
+    <p>Count words, characters, sentences, paragraphs and estimate reading time instantly. Free, no signup, no login required.</p>
+  </div>
+
+  <!-- AD TOP -->
+  <div class="ad-slot">
+    <script type="text/javascript">
+    atOptions = {'key':'daee511c7e108b897596bf858c83ff8a','format':'iframe','height':250,'width':300,'params':{}};
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/daee511c7e108b897596bf858c83ff8a/invoke.js"></script>
+  </div>
+
+  <!-- TOOL -->
+  <div class="tool-box">
+    <textarea id="wc-input" placeholder="Paste or type your text here to count words, characters, sentences and more..." oninput="countWords()"></textarea>
+
+    <div class="stats-grid">
+      <div class="stat-box"><div class="stat-num" id="wc-words">0</div><div class="stat-label">Words</div></div>
+      <div class="stat-box"><div class="stat-num" id="wc-chars">0</div><div class="stat-label">Characters</div></div>
+      <div class="stat-box"><div class="stat-num" id="wc-no-sp">0</div><div class="stat-label">Chars (no spaces)</div></div>
+      <div class="stat-box"><div class="stat-num" id="wc-sent">0</div><div class="stat-label">Sentences</div></div>
+      <div class="stat-box"><div class="stat-num" id="wc-para">0</div><div class="stat-label">Paragraphs</div></div>
+      <div class="stat-box"><div class="stat-num" id="wc-read">0 min</div><div class="stat-label">Read Time</div></div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn-danger" onclick="clearText()">&#128465; Clear</button>
+      <button class="btn btn-success" onclick="copyText()">&#128203; Copy Text</button>
+      <button class="btn btn-primary" onclick="downloadText()">&#8681; Download .txt</button>
+    </div>
+  </div>
+
+  <!-- AD BOTTOM -->
+  <div class="ad-slot">
+    <script type="text/javascript">
+    atOptions = {'key':'4666458c30cee453a15f5ca1e9b5aba4','format':'iframe','height':90,'width':728,'params':{}};
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/4666458c30cee453a15f5ca1e9b5aba4/invoke.js"></script>
+  </div>
+
+  <!-- INFO SECTION -->
+  <div class="info-section">
+    <h2>How to Use the Word Counter</h2>
+    <p>Simply paste or type your text in the box above. The word counter will automatically update in real time as you type, showing you the total word count, character count, sentence count, paragraph count and estimated reading time.</p>
+    <p>This free word counter works for essays, articles, blog posts, social media captions, emails and any other text. No signup or login required — just open and use.</p>
+  </div>
+
+  <div class="info-section">
+    <h2>Why Use QuickToolKit Word Counter?</h2>
+    <p><strong style="color:var(--accent);">Instant results</strong> — counts update as you type, no button needed.</p>
+    <p><strong style="color:var(--accent);">Reading time estimate</strong> — based on average reading speed of 200 words per minute.</p>
+    <p><strong style="color:var(--accent);">No limits</strong> — paste any amount of text, no restrictions.</p>
+    <p><strong style="color:var(--accent);">100% free</strong> — no signup, no login, no credit card required.</p>
+  </div>
+
+  <!-- OTHER TOOLS -->
+  <h2 style="font-family:'Syne',sans-serif;font-size:20px;font-weight:700;margin-bottom:16px;">Other Free Tools</h2>
+  <div class="tools-grid">
+    <a class="tool-card" href="password-generator.html"><div class="tool-card-icon">&#128272;</div><div class="tool-card-name">Password Generator</div></a>
+    <a class="tool-card" href="qr-code-generator.html"><div class="tool-card-icon">&#128247;</div><div class="tool-card-name">QR Code Generator</div></a>
+    <a class="tool-card" href="image-compressor.html"><div class="tool-card-icon">&#128444;</div><div class="tool-card-name">Image Compressor</div></a>
+    <a class="tool-card" href="case-converter.html"><div class="tool-card-icon">&#128289;</div><div class="tool-card-name">Case Converter</div></a>
+    <a class="tool-card" href="age-calculator.html"><div class="tool-card-icon">&#127874;</div><div class="tool-card-name">Age Calculator</div></a>
+    <a class="tool-card" href="base64-encoder.html"><div class="tool-card-icon">&#128290;</div><div class="tool-card-name">Base64 Encoder</div></a>
+    <a class="tool-card" href="color-picker.html"><div class="tool-card-icon">&#127912;</div><div class="tool-card-name">Color Picker</div></a>
+    <a class="tool-card" href="lorem-ipsum.html"><div class="tool-card-icon">&#128196;</div><div class="tool-card-name">Lorem Ipsum</div></a>
+    <a class="tool-card" href="percentage-calculator.html"><div class="tool-card-icon">&#128175;</div><div class="tool-card-name">Percentage Calc</div></a>
+    <a class="tool-card" href="index.html"><div class="tool-card-icon">&#127968;</div><div class="tool-card-name">All Tools</div></a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>&copy; 2025 <a href="index.html">QuickToolKit</a> &middot; Free Online Tools &middot; No Signup Required</p>
+</div>
+
+<div class="toast" id="toast">Copied!</div>
+
+<script>
+function countWords(){
+  var t=document.getElementById('wc-input').value;
+  var w=t.trim()===''?0:t.trim().split(/\s+/).filter(function(x){return x.length>0;}).length;
+  document.getElementById('wc-words').textContent=w.toLocaleString();
+  document.getElementById('wc-chars').textContent=t.length.toLocaleString();
+  document.getElementById('wc-no-sp').textContent=t.replace(/\s/g,'').length.toLocaleString();
+  document.getElementById('wc-sent').textContent=(t.trim()===''?0:(t.match(/[.!?]+/g)||[]).length).toLocaleString();
+  document.getElementById('wc-para').textContent=(t.trim()===''?0:t.split(/\n\s*\n/).filter(function(p){return p.trim().length>0;}).length||1).toLocaleString();
+  document.getElementById('wc-read').textContent=Math.ceil(w/200)+' min';
+}
+function clearText(){
+  document.getElementById('wc-input').value='';
+  countWords();
+}
+function copyText(){
+  navigator.clipboard.writeText(document.getElementById('wc-input').value).then(function(){showToast('Text copied!');});
+}
+function downloadText(){
+  var text=document.getElementById('wc-input').value;
+  if(!text.trim()){showToast('Nothing to download!');return;}
+  var a=document.createElement('a');
+  a.download='text.txt';
+  a.href='data:text/plain;charset=utf-8,'+encodeURIComponent(text);
+  a.click();
+  showToast('Downloaded!');
+}
+function showToast(m){
+  var t=document.getElementById('toast');
+  t.textContent=m||'Done!';
+  t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},2000);
+}
+</script>
+</body>
+</html>
