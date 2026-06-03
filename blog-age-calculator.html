@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator: Calculate Exact Age in Years, Months & Days | QuickToolKit</title>
-    <meta name="description" content="Free online age calculator – find your exact age in years, months, days, and next birthday countdown. No signup, private, easy.">
-    <meta name="keywords" content="age calculator, calculate age, birth date calculator, exact age, age from birth date, next birthday counter">
+    <title>Age Calculator – Calculate Exact Age in Years, Months, Days | QuickToolKit</title>
+    <meta name="description" content="Free online age calculator. Find your exact age in years, months, days, total days, and next birthday countdown. No signup required.">
+    <meta name="keywords" content="age calculator, calculate age, birth date calculator, exact age, age tool">
     <meta name="author" content="QuickToolKit">
-    <link rel="canonical" href="https://bijoystudio85-sudo.github.io/quicktoolkit/blog-age-calculator.html">
-    <meta property="og:title" content="Age Calculator: Calculate Exact Age in Years, Months & Days">
-    <meta property="og:description" content="Quickly calculate your precise age or the age of any person. Free tool, no signup required.">
-    <meta property="og:url" content="https://bijoystudio85-sudo.github.io/quicktoolkit/blog-age-calculator.html">
-    <meta property="og:type" content="article">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Age Calculator: Calculate Exact Age in Years, Months & Days">
-    <meta name="twitter:description" content="Free online age calculator – also shows days until next birthday. Private, fast, no signup.">
+    <link rel="canonical" href="https://bijoystudio85-sudo.github.io/quicktoolkit/age-calculator.html">
+    <meta property="og:title" content="Age Calculator – Calculate Exact Age">
+    <meta property="og:description" content="Quickly calculate age in years, months, days, total days, and next birthday.">
+    <meta property="og:url" content="https://bijoystudio85-sudo.github.io/quicktoolkit/age-calculator.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEY7YV101P"></script>
@@ -25,38 +23,29 @@
         gtag('config', 'G-VEY7YV101P');
     </script>
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Age Calculator: Calculate Exact Age in Years, Months & Days",
-        "description": "Complete guide to using an age calculator for personal and professional needs.",
-        "author": {"@type": "Organization", "name": "QuickToolKit"},
-        "publisher": {"@type": "Organization", "name": "QuickToolKit"},
-        "datePublished": "2026-06-03"
-    }
-    </script>
-
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
-        body{font-family:'DM Sans',sans-serif;background:#0a0f1e;color:#e2e8f0;line-height:1.7;}
-        .topbar{background:#111827;border-bottom:1px solid #1e2d45;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;position:sticky;top:0;z-index:100;}
+        body{font-family:'DM Sans',sans-serif;background:#0a0f1e;color:#e2e8f0;line-height:1.6;}
+        .topbar{background:#111827;border-bottom:1px solid #1e2d45;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
         .logo{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;background:linear-gradient(135deg,#00d4ff,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none;}
         .nav-links{display:flex;gap:20px;}
-        .nav-links a{color:#94a3b8;text-decoration:none;font-size:14px;transition:0.2s;}
+        .nav-links a{color:#94a3b8;text-decoration:none;font-size:14px;}
         .nav-links a:hover{color:#00d4ff;}
-        .container{max-width:900px;margin:auto;padding:40px 20px;}
-        h1{font-family:'Syne',sans-serif;font-size:38px;background:linear-gradient(135deg,#00d4ff,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;}
-        h2{font-family:'Syne',sans-serif;font-size:28px;color:#00d4ff;margin:40px 0 16px 0;border-left:4px solid #7c3aed;padding-left:20px;}
-        h3{font-size:22px;color:#cbd5e6;margin:25px 0 10px 0;}
-        p, li{color:#cbd5e6;margin-bottom:16px;}
-        a{color:#00d4ff;text-decoration:none;}
-        .tool-cta{background:#111827;border:1px solid #2d3a5e;border-radius:24px;padding:28px;margin:40px 0;text-align:center;}
-        .btn{display:inline-block;background:linear-gradient(135deg,#00d4ff,#7c3aed);color:#000;font-weight:bold;padding:12px 28px;border-radius:40px;margin-top:16px;}
-        .ad-slot{background:#1a2235;border:1px solid #2d3a5e;border-radius:20px;padding:20px;text-align:center;margin:40px 0;}
-        .footer{background:#111827;border-top:1px solid #1e2d45;text-align:center;padding:25px;font-size:13px;color:#64748b;margin-top:50px;}
-        @media(max-width:600px){.topbar{flex-direction:column;gap:12px;} h1{font-size:28px;} h2{font-size:24px;}}
+        .container{max-width:800px;margin:auto;padding:40px 20px;}
+        h1{font-family:'Syne',sans-serif;font-size:32px;margin-bottom:20px;background:linear-gradient(135deg,#00d4ff,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .tool-box{background:#111827;border:1px solid #1e2d45;border-radius:20px;padding:30px;margin-bottom:30px;}
+        .input-group{margin-bottom:20px;}
+        label{display:block;margin-bottom:8px;color:#94a3b8;font-weight:600;}
+        input{width:100%;padding:12px;background:#0a0f1e;border:1px solid #1e2d45;border-radius:12px;color:#e2e8f0;font-size:16px;}
+        input:focus{outline:none;border-color:#00d4ff;}
+        button{background:linear-gradient(135deg,#00d4ff,#7c3aed);color:#000;border:none;padding:12px 24px;border-radius:40px;font-weight:bold;cursor:pointer;margin-top:10px;}
+        .result{background:#1a2235;border-radius:16px;padding:20px;margin-top:25px;}
+        .result p{margin:8px 0;font-size:18px;}
+        .result span{color:#00d4ff;font-weight:bold;}
+        .ad-slot{background:#1a2235;border:1px solid #2d3a5e;border-radius:20px;padding:20px;text-align:center;margin:30px 0;}
+        .footer{background:#111827;border-top:1px solid #1e2d45;text-align:center;padding:20px;font-size:13px;color:#64748b;margin-top:40px;}
+        .footer a{color:#00d4ff;}
+        @media(max-width:600px){.container{padding:20px;} h1{font-size:26px;}}
     </style>
 </head>
 <body>
@@ -67,16 +56,14 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="privacy-policy.html">Privacy</a>
-        <a href="age-calculator.html">Age Calculator</a>
-        <a href="case-converter.html">Case Converter</a>
+        <a href="age-calculator.html">Age Calc</a>
     </div>
 </div>
 
 <div class="container">
-    <h1>📅 Age Calculator: Calculate Exact Age in Years, Months & Days</h1>
-    <p><strong>Published: June 3, 2026 | 7 min read</strong></p>
-
-    <!-- Adsterra Ad 1 -->
+    <h1>📅 Age Calculator – Exact Age in Years, Months & Days</h1>
+    
+    <!-- Adsterra Ad Top -->
     <div class="ad-slot">
         <script>
             atOptions = {'key' : 'daee511c7e108b897596bf858c83ff8a', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {}};
@@ -84,27 +71,27 @@
         <script src="https://www.highperformanceformat.com/daee511c7e108b897596bf858c83ff8a/invoke.js"></script>
     </div>
 
-    <p>Knowing someone's exact age – down to the day – is often required for official documents, medical forms, event planning, or simply curiosity. An <strong>age calculator</strong> instantly computes the precise age between any two dates, accounting for leap years. Our free tool also shows the days left until the next birthday.</p>
+    <div class="tool-box">
+        <div class="input-group">
+            <label>📅 Date of Birth:</label>
+            <input type="date" id="dob" value="2000-01-01">
+        </div>
+        <div class="input-group">
+            <label>📆 As of Date (optional):</label>
+            <input type="date" id="asof">
+        </div>
+        <button onclick="calculateAge()">Calculate Age</button>
 
-    <h2>🔍 How Does an Age Calculator Work?</h2>
-    <p>You enter a birth date (and optionally a second date). The calculator computes the difference in years, months, and days using accurate date arithmetic. It correctly handles month lengths and February 29 in leap years. Our <a href="age-calculator.html">free age calculator</a> does all this in real time, no signup or data collection.</p>
-
-    <h2>📌 Common Uses of an Age Calculator</h2>
-    <ul>
-        <li><strong>Legal & official forms:</strong> Many applications ask for exact age in years, months, days.</li>
-        <li><strong>Healthcare:</strong> Doctors or fitness trackers may need precise age for growth charts or dosage calculators.</li>
-        <li><strong>Eligibility checks:</strong> Voting, driving license, retirement benefits – often based on exact age on a certain date.</li>
-        <li><strong>Event planning:</strong> Countdown to a milestone birthday.</li>
-        <li><strong>Genealogy & history:</strong> Determine exact age of ancestors from historical records.</li>
-        <li><strong>Fun facts:</strong> "You are 12,345 days old!" – our tool provides total days too.</li>
-    </ul>
-
-    <div class="tool-cta">
-        <p style="font-size:20px;">✨ Calculate your exact age now – free and instant ✨</p>
-        <a href="age-calculator.html" class="btn">Use Age Calculator →</a>
+        <div class="result" id="result">
+            <p><span>Years:</span> <span id="years">-</span></p>
+            <p><span>Months:</span> <span id="months">-</span></p>
+            <p><span>Days:</span> <span id="days">-</span></p>
+            <p><span>Total Days Lived:</span> <span id="totalDays">-</span></p>
+            <p><span>Next Birthday In:</span> <span id="nextBD">-</span> days</p>
+        </div>
     </div>
 
-    <!-- Adsterra Ad 2 -->
+    <!-- Adsterra Ad Bottom -->
     <div class="ad-slot">
         <script>
             atOptions = {'key' : '4666458c30cee453a15f5ca1e9b5aba4', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {}};
@@ -112,32 +99,9 @@
         <script src="https://www.highperformanceformat.com/4666458c30cee453a15f5ca1e9b5aba4/invoke.js"></script>
     </div>
 
-    <h2>✅ Why Use an Online Age Calculator Instead of Manual Math?</h2>
-    <ul>
-        <li><strong>Leap years are automatically handled</strong> – no more off‑by‑one errors.</li>
-        <li><strong>Month‑length differences</strong> (30 vs 31 days) are correctly accounted for.</li>
-        <li><strong>Instant results</strong> – no need to remember formulas.</li>
-        <li><strong>Next birthday countdown</strong> – see exactly how many days until the next celebration.</li>
-    </ul>
-
-    <h2>📊 Fun Age Statistics</h2>
-    <p>Did you know? The average person celebrates their birthday 0.27 times per year (counting extra days from leap years). Using an age calculator, you can see how many total days you've lived. For example, a 30‑year‑old has lived approximately 10,957 days (including 7 or 8 leap days).</p>
-
-    <h2>💡 Tips for Using Age Calculators</h2>
-    <ul>
-        <li>Always double‑check the birth date format – use YYYY-MM-DD for consistency.</li>
-        <li>When calculating age for legal deadlines, some jurisdictions consider you a year older on January 1. Our tool gives exact calendar age.</li>
-        <li>Use the "as of" date feature to calculate age on a past or future date – great for contracts or retirement planning.</li>
-    </ul>
-
-    <h2>🔒 Privacy & Security</h2>
-    <p>The age calculator works entirely in your browser. The dates you enter never leave your device. No server logs, no tracking. You can use it for sensitive personal information without worry.</p>
-
-    <h2>🌟 More Free Tools from QuickToolKit</h2>
-    <p>We also offer a <a href="word-counter.html">Word Counter</a>, <a href="password-generator.html">Password Generator</a>, <a href="qr-code-generator.html">QR Code Generator</a>, <a href="image-compressor.html">Image Compressor</a>, <a href="case-converter.html">Case Converter</a>, and many other free utilities – all 100% client‑side, no signups, no ads tracking you.</p>
-
-    <div style="background:#111827; border-radius:24px; padding:24px; margin-top:30px; border:1px solid #2d3a5e;">
-        <p><strong>👉 Ready to know your exact age?</strong> <a href="age-calculator.html">Open the Age Calculator →</a></p>
+    <div style="background:#111827; border-radius:16px; padding:20px;">
+        <h2 style="font-size:22px; color:#00d4ff;">About Age Calculator</h2>
+        <p>This tool calculates your exact age in years, months, days, and total days lived. It also counts down to your next birthday. Leap years are automatically accounted for. No signup, no data leaves your device.</p>
     </div>
 </div>
 
@@ -145,5 +109,53 @@
     <p>© 2026 QuickToolKit – Free Online Tools | <a href="privacy-policy.html">Privacy Policy</a> | <a href="about.html">About Us</a></p>
 </div>
 
+<script>
+    function calculateAge() {
+        let dob = new Date(document.getElementById('dob').value);
+        let asof = document.getElementById('asof').value ? new Date(document.getElementById('asof').value) : new Date();
+
+        if (isNaN(dob.getTime())) {
+            alert("Please enter a valid birth date.");
+            return;
+        }
+
+        let years = asof.getFullYear() - dob.getFullYear();
+        let months = asof.getMonth() - dob.getMonth();
+        let days = asof.getDate() - dob.getDate();
+
+        if (days < 0) {
+            months--;
+            let lastMonth = new Date(asof.getFullYear(), asof.getMonth(), 0);
+            days += lastMonth.getDate();
+        }
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        // Total days lived
+        let totalDays = Math.floor((asof - dob) / (1000 * 60 * 60 * 24));
+
+        // Next birthday countdown
+        let nextBirthday = new Date(asof.getFullYear(), dob.getMonth(), dob.getDate());
+        if (nextBirthday < asof) {
+            nextBirthday.setFullYear(asof.getFullYear() + 1);
+        }
+        let daysToBD = Math.ceil((nextBirthday - asof) / (1000 * 60 * 60 * 24));
+
+        document.getElementById('years').innerText = years;
+        document.getElementById('months').innerText = months;
+        document.getElementById('days').innerText = days;
+        document.getElementById('totalDays').innerText = totalDays.toLocaleString();
+        document.getElementById('nextBD').innerText = daysToBD;
+    }
+
+    // Set default asof to today
+    window.onload = function() {
+        let today = new Date().toISOString().split('T')[0];
+        document.getElementById('asof').value = today;
+        calculateAge();
+    };
+</script>
 </body>
 </html>
