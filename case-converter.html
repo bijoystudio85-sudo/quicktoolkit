@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Converter – Change Text to Uppercase, Lowercase, Title Case | QuickToolKit</title>
+    <meta name="description" content="Free online case converter. Transform any text to uppercase, lowercase, title case, sentence case, or toggle case. Instant, no signup.">
+    <link rel="canonical" href="https://bijoystudio85-sudo.github.io/quicktoolkit/case-converter.html">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEY7YV101P"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VEY7YV101P');</script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'DM Sans',sans-serif;background:#0a0f1e;color:#e2e8f0;line-height:1.6;}
+        .topbar{background:#111827;border-bottom:1px solid #1e2d45;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+        .logo{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;background:linear-gradient(135deg,#00d4ff,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none;}
+        .nav-links{display:flex;gap:20px;}
+        .nav-links a{color:#94a3b8;text-decoration:none;font-size:14px;}
+        .container{max-width:800px;margin:auto;padding:40px 20px;}
+        h1{font-family:'Syne',sans-serif;font-size:32px;margin-bottom:20px;background:linear-gradient(135deg,#00d4ff,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .tool-box{background:#111827;border:1px solid #1e2d45;border-radius:20px;padding:30px;margin:20px 0;}
+        textarea{width:100%;padding:12px;background:#0a0f1e;border:1px solid #1e2d45;border-radius:12px;color:#e2e8f0;font-size:16px;font-family:monospace;min-height:120px;}
+        .btn-group{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0;}
+        button{background:#1e2d45;border:none;padding:10px 18px;border-radius:40px;color:#e2e8f0;cursor:pointer;font-weight:500;}
+        button.primary{background:linear-gradient(135deg,#00d4ff,#7c3aed);color:#000;}
+        .ad-slot{background:#1a2235;border:1px solid #2d3a5e;border-radius:20px;padding:20px;text-align:center;margin:30px 0;}
+        .footer{background:#111827;border-top:1px solid #1e2d45;text-align:center;padding:20px;font-size:13px;color:#64748b;}
+    </style>
+</head>
+<body>
+<div class="topbar">
+    <a class="logo" href="index.html">⚡ QuickToolKit</a>
+    <div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="privacy-policy.html">Privacy</a><a href="case-converter.html">Case Converter</a></div>
+</div>
+<div class="container">
+    <h1>🔄 Case Converter – Transform Text Instantly</h1>
+    <div class="ad-slot"><script>atOptions={'key':'daee511c7e108b897596bf858c83ff8a','format':'iframe','height':250,'width':300};</script><script src="https://www.highperformanceformat.com/daee511c7e108b897596bf858c83ff8a/invoke.js"></script></div>
+    <div class="tool-box">
+        <textarea id="inputText" placeholder="Type or paste your text here..."></textarea>
+        <div class="btn-group">
+            <button onclick="toUpperCase()">UPPER CASE</button>
+            <button onclick="toLowerCase()">lower case</button>
+            <button onclick="toTitleCase()">Title Case</button>
+            <button onclick="toSentenceCase()">Sentence case</button>
+            <button onclick="toToggleCase()">tOGGLE cASE</button>
+            <button class="primary" onclick="copyResult()">📋 Copy Result</button>
+            <button onclick="clearText()">🗑️ Clear</button>
+        </div>
+        <textarea id="outputText" placeholder="Converted text will appear here..." readonly></textarea>
+    </div>
+    <div class="ad-slot"><script>atOptions={'key':'4666458c30cee453a15f5ca1e9b5aba4','format':'iframe','height':90,'width':728};</script><script src="https://www.highperformanceformat.com/4666458c30cee453a15f5ca1e9b5aba4/invoke.js"></script></div>
+</div>
+<div class="footer"><p>© 2026 QuickToolKit – Free Online Tools | <a href="privacy-policy.html">Privacy Policy</a> | <a href="about.html">About Us</a></p></div>
+<script>
+    const input = document.getElementById('inputText');
+    const output = document.getElementById('outputText');
+    function toUpperCase() { output.value = input.value.toUpperCase(); }
+    function toLowerCase() { output.value = input.value.toLowerCase(); }
+    function toTitleCase() {
+        let str = input.value.toLowerCase();
+        output.value = str.replace(/\b\w/g, c => c.toUpperCase());
+    }
+    function toSentenceCase() {
+        let str = input.value.toLowerCase();
+        output.value = str.replace(/(^\s*\w|[.!?]\s*\w)/g, c => c.toUpperCase());
+    }
+    function toToggleCase() {
+        let result = '';
+        for(let i=0; i<input.value.length; i++) {
+            let ch = input.value[i];
+            if(ch === ch.toUpperCase()) result += ch.toLowerCase();
+            else result += ch.toUpperCase();
+        }
+        output.value = result;
+    }
+    function copyResult() { navigator.clipboard.writeText(output.value); alert('Copied!'); }
+    function clearText() { input.value = ''; output.value = ''; }
+</script>
+</body>
+</html>
