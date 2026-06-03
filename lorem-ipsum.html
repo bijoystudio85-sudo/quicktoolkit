@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator – Generate Placeholder Text | QuickToolKit</title>
+    <meta name="description" content="Free Lorem Ipsum generator. Create dummy text for designs, mockups, and prototypes. Choose paragraphs, words, or sentences. No signup.">
+    <link rel="canonical" href="https://bijoystudio85-sudo.github.io/quicktoolkit/lorem-ipsum.html">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEY7YV101P"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VEY7YV101P');</script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'DM Sans',sans-serif;background:#0a0f1e;color:#e2e8f0;line-height:1.6;}
+        .topbar{background:#111827;border-bottom:1px solid #1e2d45;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+        .logo{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;background:linear-gradient(135deg,#00d4ff,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none;}
+        .nav-links{display:flex;gap:20px;}
+        .nav-links a{color:#94a3b8;text-decoration:none;font-size:14px;}
+        .container{max-width:800px;margin:auto;padding:40px 20px;}
+        h1{font-family:'Syne',sans-serif;font-size:32px;margin-bottom:20px;background:linear-gradient(135deg,#00d4ff,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .tool-box{background:#111827;border:1px solid #1e2d45;border-radius:20px;padding:30px;margin:20px 0;}
+        select, input, button{padding:10px;margin:10px 5px;border-radius:40px;border:none;font-size:14px;}
+        select, input{background:#1a2235;color:#e2e8f0;border:1px solid #2d3a5e;}
+        button{background:linear-gradient(135deg,#00d4ff,#7c3aed);color:#000;font-weight:bold;cursor:pointer;}
+        textarea{width:100%;padding:12px;background:#0a0f1e;border:1px solid #1e2d45;border-radius:12px;color:#e2e8f0;font-size:14px;min-height:200px;margin-top:20px;}
+        .ad-slot{background:#1a2235;border:1px solid #2d3a5e;border-radius:20px;padding:20px;text-align:center;margin:30px 0;}
+        .footer{background:#111827;border-top:1px solid #1e2d45;text-align:center;padding:20px;font-size:13px;color:#64748b;}
+    </style>
+</head>
+<body>
+<div class="topbar">
+    <a class="logo" href="index.html">⚡ QuickToolKit</a>
+    <div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="privacy-policy.html">Privacy</a><a href="lorem-ipsum.html">Lorem Ipsum</a></div>
+</div>
+<div class="container">
+    <h1>📄 Lorem Ipsum Generator</h1>
+    <div class="ad-slot"><script>atOptions={'key':'daee511c7e108b897596bf858c83ff8a','format':'iframe','height':250,'width':300};</script><script src="https://www.highperformanceformat.com/daee511c7e108b897596bf858c83ff8a/invoke.js"></script></div>
+    <div class="tool-box">
+        <label>Choose type:</label>
+        <select id="type">
+            <option value="paragraphs">Paragraphs</option>
+            <option value="words">Words</option>
+            <option value="sentences">Sentences</option>
+        </select>
+        <input type="number" id="count" value="3" min="1" max="50">
+        <button onclick="generateLorem()">Generate</button>
+        <button onclick="copyText()">📋 Copy</button>
+        <textarea id="output" readonly placeholder="Your Lorem Ipsum text will appear here..."></textarea>
+    </div>
+    <div class="ad-slot"><script>atOptions={'key':'4666458c30cee453a15f5ca1e9b5aba4','format':'iframe','height':90,'width':728};</script><script src="https://www.highperformanceformat.com/4666458c30cee453a15f5ca1e9b5aba4/invoke.js"></script></div>
+</div>
+<div class="footer"><p>© 2026 QuickToolKit – Free Online Tools | <a href="privacy-policy.html">Privacy Policy</a> | <a href="about.html">About Us</a></p></div>
+<script>
+    const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    const words = loremIpsum.split(' ');
+    const sentences = loremIpsum.split('. ');
+
+    function generateLorem() {
+        let type = document.getElementById('type').value;
+        let count = parseInt(document.getElementById('count').value);
+        let output = '';
+        if(type === 'paragraphs') {
+            for(let i=0; i<count; i++) output += loremIpsum + '\n\n';
+        } else if(type === 'words') {
+            let wordArr = [];
+            for(let i=0; i<count; i++) wordArr.push(words[i % words.length]);
+            output = wordArr.join(' ') + '.';
+        } else if(type === 'sentences') {
+            let sentArr = [];
+            for(let i=0; i<count; i++) sentArr.push(sentences[i % sentences.length]);
+            output = sentArr.join('. ') + '.';
+        }
+        document.getElementById('output').value = output.trim();
+    }
+    function copyText() { navigator.clipboard.writeText(document.getElementById('output').value); alert('Copied!'); }
+    window.onload = generateLorem;
+</script>
+</body>
+</html>
